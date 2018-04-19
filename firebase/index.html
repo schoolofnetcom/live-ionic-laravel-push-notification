@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Push Notification - School of Net</title>
+    <!--<link rel="manifest" href="manifest.json">-->
+</head>
+<body>
+<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDZ2vB5zJgZO60J7loxLDBBjXm9fmPsNes",
+        authDomain: "live-ionic-laravel-push-not.firebaseapp.com",
+        databaseURL: "https://live-ionic-laravel-push-not.firebaseio.com",
+        projectId: "live-ionic-laravel-push-not",
+        storageBucket: "live-ionic-laravel-push-not.appspot.com",
+        messagingSenderId: "998743035760"
+    };
+    //enviar notificação para vários devices "registration_ids": ["",""]
+    var firebaseApp = firebase.initializeApp(config);
+    var messaging = firebaseApp.messaging();
+
+    messaging.requestPermission()
+        .then(function(){
+            console.log('Permissão concedida');
+            messaging.getToken()
+                .then(function(token){
+                    console.log('token do device',token);
+                });
+        });
+    messaging.onMessage(function(payload){
+        alert('Mensagem recebida');
+        console.log(payload);
+    });
+
+    messaging.onTokenRefresh().then(function(token){
+
+    })
+
+</script>
+</body>
+</html>

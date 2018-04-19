@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "998743035760",
+    "firebase_url": "https://live-ionic-laravel-push-not.firebaseio.com",
+    "project_id": "live-ionic-laravel-push-not",
+    "storage_bucket": "live-ionic-laravel-push-not.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998743035760:android:d7ca1134da262f27",
+        "android_client_info": {
+          "package_name": "com.schoolofnet.live_ionic_push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998743035760-oknhbluvr6hv1n5rsrino4dqeqafn80f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLBFl61eH-l2CFjcMn_CLY0iAECZFbgCs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
